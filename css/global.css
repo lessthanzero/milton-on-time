@@ -1,0 +1,283 @@
+
+@-webkit-keyframes "repaint-winter" {
+
+    from {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes "repaint-winter" {
+
+    from {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes "repaint-spring" {
+
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes "repaint-spring" {
+
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes "repaint-summer" {
+
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes "repaint-summer" {
+
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes "repaint-autumn" {
+
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes "repaint-autumn" {
+
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+body {
+    position: relative;
+    font: normal 100%/120% Georgia, "Times New Roman", Times, serif;
+    color: #444;
+}
+
+.central-column {
+    width: 50%;
+    min-width: 640px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.header {
+    font-family: 'Yeseva One', cursive;
+    font-size: 3em;
+    line-height: 110%;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #444;
+}
+
+.author {
+    font-size: .8em;
+}
+
+.bg-slide {
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+
+    -webkit-animation-duration: 120s;
+    animation-duration: 120s;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;                
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.winter {
+    background: url(../img/pieter_bruegel_hunters_in_the_snow.jpg) center top no-repeat;
+    z-index: -1;
+    -webkit-animation-name: "repaint-winter";
+    animation-name: "repaint-winter";
+}
+
+.spring {
+    background: url(../img/Bulvar_Claude_Mone.jpg) center top no-repeat;
+    z-index: -2;
+    -webkit-animation-name: "repaint-spring";
+    animation-name: "repaint-spring";
+}
+
+.summer {
+    background: url(../img/paul-gauguin-landscape.jpg) center top no-repeat;
+    z-index: -3;
+    -webkit-animation-name: "repaint-summer";
+    animation-name: "repaint-summer";
+}
+
+.autumn {
+    background: url(../img/autumn-cannibalism-dali.jpg) center top no-repeat;
+    z-index: -4;
+    -webkit-animation-name: "repaint-autumn";
+    animation-name: "repaint-autumn";
+}
+
+.text-holder {
+    display: block;
+    width: 100%;
+}
+
+.poem-text { 
+    font-size: 1.2em;
+}
+
+.link {
+    text-align: center;
+    display: block;
+    margin: .5em auto;
+    width: 50%;
+}
+
+.link a {
+    color: #444;
+}
+
+.link a:hover {
+    color: #ad203e;
+    background: wheat;
+}
+
+.central-text {
+    width: 100%;
+    margin: .5em auto 0;
+    padding: .5em;
+    position: relative;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.poem-text {
+    opacity: .9;
+    display: block;
+    margin: 1em auto .5em;
+    border: 1px #999 solid;
+    background: #fff;
+    padding: 1.5em 1.5em 1.5em 5em;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 1px 1px 3px #888;
+       -moz-box-shadow: 1px 1px 3px #888;
+         -o-box-shadow: 1px 1px 3px #888;
+            box-shadow: 1px 1px 3px #888;
+}
+
+.poem-text:hover {
+    opacity: 1;
+}
